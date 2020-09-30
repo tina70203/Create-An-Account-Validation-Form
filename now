@@ -1,0 +1,94 @@
+var _PREVIEW_URL;
+
+document.querySelector(".piccontent").addEventListener("click", function () {
+  document.querySelector(".inputPic").click();
+});
+
+document.querySelector(".inputPic").addEventListener("change", function () {
+  //user selected file
+  var file = this.files[0];
+
+  // allowed types
+  var fileType = ["image/jpeg", "image/png", "image/jpg"];
+
+  //validate file
+
+  if (fileType.indexOf(file.type) == -1) {
+    setError(photo, "Error : Incorrect file type");
+    e.preventDefault();
+  } else {
+    setSuccess(photo);
+  }
+
+  if (file.size > 2 * 1024 * 1024) {
+    setError(photo, "Error: This file is over maximum size");
+    e.preventDefault();
+  } else {
+    setSuccess(photo);
+  }
+
+  _PREVIEW_URL = URL.createObjectURL(file);
+  document.getElementById("preview-image").setAttribute("src", _PREVIEW_URL);
+  document.getElementById("preview-image").style.display = "inline-block";
+});
+
+function proflie() {
+  var previewImg = document.getElementById("preview-image").style.display;
+
+  var inputPic = document.getElementById("inputPic");
+
+  if (inputPic.files.length == 0) {
+    e.preventDefault();
+    setError(photo, "Error :empty");
+  } else {
+    setSuccess(photo);
+  }
+
+  if (previewImg == "none") {
+    e.preventDefault();
+  }
+}
+
+function setError(input, message) {
+  const uploadPic = input.parentElement;
+  const small = uploadPic.querySelector("span");
+  small.innerText = message;
+  uploadPic.className = "piccontent error";
+}
+function setSuccess(input) {
+  const uploadPic = input.parentElement;
+  uploadPic.className = "piccontent success";
+}
+
+
+
+
+
+
+.contentPhoto.error i.fa-exclamation {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.contentPhoto.success i.fa-check {
+  color: #2ecc71;
+  visibility: visible;
+}
+.contentPhoto i.fa-check,
+i.fa-exclamation {
+  position: absolute;
+  top: 60px;
+  right: 15px;
+  visibility: hidden;
+}
+
+.contentPhoto span {
+  position: absolute;
+  top: 145px;
+  left: 140px;
+  visibility: hidden;
+  font-size: 18px;
+}
+.contentPhoto.error span {
+  visibility: visible;
+}

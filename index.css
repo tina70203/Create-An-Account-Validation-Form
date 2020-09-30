@@ -1,0 +1,131 @@
+/*Reset*/
+/* Remove default margin */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1;
+  /*outline: 1px solid #f00;*/
+}
+label {
+  display: block;
+}
+
+input {
+  height: 50px;
+  border-radius: 6px;
+  border: 2px solid black;
+  margin-bottom: 24px;
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 500px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.title h1 {
+  font-size: 48px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.title p {
+  font-size: 24px;
+}
+.accountForm input {
+  width: 100%;
+}
+
+.namenphone input {
+  width: 220px;
+}
+.namenphone {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dob {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dob input {
+  width: 140px;
+}
+.accountForm,
+.generalForm {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.nextBtn {
+  font-size: 20px;
+  background-color: rgb(142, 198, 243);
+  cursor: pointer;
+}
+
+.pro {
+  margin-top: 57px;
+}
+.process-line {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 234px;
+  margin: 0 auto;
+}
+
+.process-line .process-pointer {
+  height: 16px;
+  width: 16px;
+  border: 2px solid #0206ffd8;
+  border-radius: 20px;
+  position: relative;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 234px;
+  background-color: #0206ffd8;
+}
+
+.process-point.done {
+  border-color: #0206ffd8;
+}
+.process-pointer.done:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  background-color: #0206ffd8;
+  border-radius: 50%;
+}
+
+.process-pointer.done {
+  border-color: #0206ffd8;
+}
+
+.process-pointer.checked {
+  font-size: 12px;
+  color: white;
+  background-color: #0206ffd8;
+}

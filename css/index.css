@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*outline: 1px solid #f00;*/ }
+
+label {
+  display: inline-block; }
+
+.headerbox {
+  width: 460px;
+  height: 8px;
+  background-color: #050505;
+  margin: 0 auto; }
+
+.container {
+  margin: 0 auto;
+  width: 460px;
+  margin-top: 10px; }
+
+.title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 28px; }
+  .title h1 {
+    font-size: 48px;
+    font-weight: 100;
+    margin-bottom: 10px; }
+  .title p {
+    font-size: 24px; }
+
+.form-control {
+  position: relative;
+  margin-bottom: 14px; }
+  .form-control input {
+    width: 98%;
+    height: 45px;
+    border-radius: 6px;
+    border: 2px solid #050505;
+    margin-bottom: 24px;
+    margin-top: 8px;
+    font-size: 20px;
+    text-indent: 10px; }
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777; }
+
+.form-control.success input {
+  border-color: #2ecc71; }
+
+.form-control.error input {
+  border-color: #e74c3c; }
+
+.form-control i {
+  position: absolute;
+  top: 42px;
+  right: 18px;
+  visibility: hidden; }
+
+.form-control.success i.fa-check {
+  color: #2ecc71;
+  visibility: visible; }
+
+.form-control.error i.fa-exclamation-triangle {
+  color: #e74c3c;
+  visibility: visible; }
+
+.form-control small {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  visibility: hidden; }
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c; }
+
+.namenphone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .namenphone input {
+    width: 96%; }
+
+.accountForm,
+.generalForm {
+  font-size: 20px; }
+
+.nextBtn {
+  font-size: 20px;
+  background-color: #050505;
+  color: white;
+  cursor: pointer;
+  width: 98%;
+  height: 52px;
+  border-radius: 8px;
+  border: 2px solid #050505; }
+
+.smile {
+  margin-bottom: 40px;
+  color: #050505;
+  text-align: center; }
+  .smile i {
+    font-size: 230px; }
+
+.rthomepage {
+  font-size: 20px;
+  color: #050505;
+  text-align: center; }
+
+.pro {
+  margin-top: 57px; }
+
+.process-line {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 234px;
+  margin: 0 auto; }
+
+.process-line .process-pointer {
+  height: 16px;
+  width: 16px;
+  border: 2px solid #fa1616d8;
+  border-radius: 20px;
+  position: relative;
+  background-color: white;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.process-line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 234px;
+  background-color: #fa1616d8; }
+
+.process-point.done {
+  border-color: #fa1616d8; }
+
+.process-pointer.done:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  background-color: #fa1616d8;
+  border-radius: 50%; }
+
+.process-pointer.done {
+  border-color: #fa1616d8; }
+
+.process-pointer.checked {
+  font-size: 12px;
+  color: white;
+  background-color: #fa1616d8; }

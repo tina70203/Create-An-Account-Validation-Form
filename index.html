@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0615fabc13.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Validation</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerbox"></div>
+    </header>
+    <div class="container">
+      <div class="pro">
+        <div class="process-line">
+          <div class="process-pointer done"></div>
+          <div class="process-pointer"></div>
+          <div class="process-pointer"></div>
+        </div>
+      </div>
+
+      <div class="title">
+        <h1>Create Account</h1>
+        <p>Glad to see you here!</p>
+      </div>
+
+      <div class="accountForm">
+        <form id="form" action="info.html">
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input id="email" type="email" />
+            <i class="fas fa-check"></i>
+            <i class="fas fa-exclamation-triangle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="userPassword">Password</label>
+            <input
+              type="password"
+              id="userPassword"
+              placeholder="At least 6 characters, 1 uppercase letter"
+            />
+            <i class="fas fa-check"></i>
+            <i class="fas fa-exclamation-triangle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="conPassword">Confirm Password</label>
+            <input type="password" id="conPassword" />
+            <i class="fas fa-check"></i>
+            <i class="fas fa-exclamation-triangle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="btn">
+            <input id="btn " class="nextBtn" type="submit" value="Next" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="creatAccount.js"></script>
+  </body>
+</html>

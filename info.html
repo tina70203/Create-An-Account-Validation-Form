@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0615fabc13.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Validation</title>
+  </head>
+  <header>
+    <div class="headerbox"></div>
+  </header>
+
+  <body>
+    <div class="container">
+      <div class="pro">
+        <div class="process-line">
+          <div class="process-pointer fas fa-check checked"></div>
+          <div class="process-pointer done"></div>
+          <div class="process-pointer"></div>
+        </div>
+      </div>
+
+      <div class="title">
+        <h1>Tell us about you</h1>
+        <p>We will not tell anyone!</p>
+      </div>
+     
+      <div class="generalForm">
+        <form
+          id="form"
+          action="done.html"
+        >     
+              <div class="namenphone">
+                <div class="form-control">             
+                  <label for="name">First Name</label>
+                  <input type="text" id="name"/>
+                  <i class="fas fa-exclamation-triangle"></i>
+                  <i class="fas fa-check"></i>
+                  <small>Error message</small>
+                </div>
+                
+                    <div class="form-control">
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname"/>
+                      <i class="fas fa-exclamation-triangle"></i>
+                      <i class="fas fa-check"></i>
+                      <small>Error message</small>
+                    </div>
+              </div>
+                <div class="form-control">
+                  <label for="phone">Phone</label>
+                  <input type="text" id="phone" placeholder="+44 7123-456789" />
+                  <i class="fas fa-check"></i>
+                  <i class="fas fa-exclamation-triangle"></i>
+                  <small>Error message</small>
+                </div>
+                  
+                    <div class="form-control">
+                      <label for="address1">Address</label>
+                      <input type="text" id="address1"/>
+                      <i class="fas fa-check"></i>
+                      <i class="fas fa-exclamation-triangle"></i>
+                      <small>Error message</small>
+                    </div>
+            
+                       <div class="namenphone">
+                          <div class="form-control">
+                            <label for="country">Country</label>
+                            <input type="text" id="country"/>
+                            <i class="fas fa-check"></i>
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <small>Error message</small>
+                          </div>
+                        
+                          <div class="form-control">
+                            <label for="postcode">Postcode</label>
+                            <input type="text" id="postcode" />
+                            <i class="fas fa-check"></i>
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <small>Error message</small>
+                          </div>
+                        </div>
+                  <div class="btn">
+                    <input class="nextBtn" type="submit" value="Next" />
+                  </div>
+            </form>
+        </div>    
+      </div>
+    </div>
+    <script src="geneInfo.js"></script>
+  </body>
+</html>
